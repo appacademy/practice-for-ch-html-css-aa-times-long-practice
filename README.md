@@ -126,7 +126,7 @@ you're interested.
   imported from Font Awesome's list of icons and apply them to elements using
   classes.
 
-[font-awesome]: http://fontawesome.io/icons/
+[font-awesome]: https://fontawesome.com/v6/icons
 
 ## Phase 1: Reset
 
@@ -205,8 +205,11 @@ In __views/shared/_main_nav.html.erb__:
 - Add "Subscribe Now" and "Log In" buttons. (Note: use HTML button tags for
   these elements)
 - Add the gear icon.
-  - Use [this list of Font Awesome icon classes][font-awesome] to find the right
-    gear image. You may want to search "cog" instead of "gear".
+  - Use [this list of Font Awesome icon classes][font-awesome-solid] to find an
+    appropriate gear image. Match the gear as closely as you can, but don't
+    worry if it is not identical. (**Note:** Although Font Awesome v6 offers
+    several different versions of each icon, the free FA account your site is
+    using requires that you use the `fa-solid` version.)
   - Use the "Sections" and "Search" buttons defined in the `left-nav` as guides.
 
 A great use for the __layout.scss__ stylesheet is to define styling shared by
@@ -233,6 +236,8 @@ selectors have been provided for you. Here are some guidelines:
 - Use the `$lightest-gray` hover for the list elements without buttons.
 - Style the necessary `margin` spacing between the texts and the icons.
 - Use `font-size` to make the gear icon bigger.
+
+[font-awesome-solid]: https://fontawesome.com/v6/icons?s=solid
 
 ### Masthead
 

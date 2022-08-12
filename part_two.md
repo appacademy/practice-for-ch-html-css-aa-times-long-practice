@@ -1,8 +1,8 @@
 # AA Times Continued (Phases 4-6)
 
-**Make Sure you finish Phases 1-3 before continuing!**
+**Make sure you finish Phases 1-3 before continuing!**
 
-## Phase 4: The Main Content
+## Phase 4: The main content
 
 For the next phase you will add the latest App Academy Times news using a
 flexible grid system. The __docs/copy__ folder contains the content for each
@@ -63,18 +63,21 @@ at 66.66% and 33.33% respectively.
 
 Next, create two columns for the main-story class that are sized at 33.33%
 and 66.66% respectively. Also, add a 20px padding-right to the main-story
-class and its child element which is labeled col-1-3. Give the child
+class and its child element which is labeled `col-1-3`. Give the child
 element a bottom margin of 20px.
 
 Next, give the opinion class a top margin of 10px and a right padding of
 20px.  Now create a grid with three rows and two columns where the first
 row is 5px high, the third row is 60% of the height, the second row fills the
-rest of the space, and the two columns split the graph in half.  Hint: look into
-fr to fill the rest of the space for when you're creating rows. Then give
-the first child labeled col-1-2 a padding on its right side of 20px.  Make sure
-that the first anchor tag child of the opinion class spans the two columns.
-Finally, make sure that the class labeled .opinion-sign-up also
-spans the first two columns.
+rest of the space, and the two columns split the graph in half.  
+
+> **Hint:** Look into `fr` to fill the rest of the space for when you're
+> creating rows. (`fr` is short for "fraction" of the available space;
+> `grid-template-columns: 1fr 1fr 1fr` would create three evenly-spaced
+> columns.) Then give the first child labeled `col-1-2` a padding on its right
+> side of 20px. Make sure that the first anchor tag child of the opinion class
+> spans the two columns. Finally, make sure that the class labeled
+> `.opinion-sign-up` also spans the first two columns.
 
 **Get a TA to review your page before continuing.**
 
@@ -105,7 +108,7 @@ a completely responsive website!
 
 ---
 
-## Phase 5: The Sections Sidebar
+## Phase 5: The sections sidebar
 
 Now code a Sections Sidebar so that mobile users still have a way of
 navigating all of the different App Academy Times sections. Style it according
@@ -145,7 +148,8 @@ This is the effect you are going for:
 
 ![Sidebar Example][sidebar-ex]
 
-- Copy and paste the content from __docs/copy/sidebar_submenus.txt__.
+- Copy and paste the content from __docs/copy/sidebar\_submenus.txt__ into
+  __\_sections_sidebar.html.erb__.
 - Add the remaining HTML to the `sections_sidebar` by nesting `ul` elements
   within the `li` elements that require an additional dropdown.
 
@@ -153,26 +157,26 @@ Create pure CSS dropdowns with the following example code:
 
 ```html
 <section class="dropdown">
-    <ul>
-        <li>lorem ipsum</li>
-        <li>Lorem ipsum dolor</li>
-    </ul>
+  <ul>
+    <li>lorem ipsum</li>
+    <li>Lorem ipsum dolor</li>
+  </ul>
 </section>
 ```
 
 ```css
 .dropdown {
-    position: relative;
+  position: relative;
 }
 .dropdown > ul {
-    display: none;
-    position: absolute;
-    /* use top, left, right, bottom to position */
+  display: none;
+  position: absolute;
+  /* use top, left, right, bottom to position */
 }
 .dropdown:hover > ul {
-    /* applies the following style to uls inside .dropdown */
-    /* but only when .dropdown is being hovered over */
-    display: block;
+  /* applies the following style to uls inside .dropdown */
+  /* but only when .dropdown is being hovered over */
+  display: block;
 }
 ```
 
@@ -182,24 +186,24 @@ arrows to the list items in the dropdown HTML from above:
 
 ```css
 .dropdown li {
-    position: relative;
+  position: relative;
 }
 .dropdown li:after,
 .dropdown li:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 25%;
-    border-left: 5px solid gray;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    width: 0;
-    height: 0;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  border-left: 5px solid gray;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  width: 0;
+  height: 0;
 }
 .dropdown li:after {
-    right: 2px;
-    border-left: 5px solid white;
-    z-index: 1;
+  right: 2px;
+  border-left: 5px solid white;
+  z-index: 1;
 }
 ```
 
@@ -211,7 +215,7 @@ arrows to the list items in the dropdown HTML from above:
 
 ---
 
-## Phase 6: Search Modal
+## Phase 6: Search modal
 
 [Search Modal Mockup][search-mock]
 
@@ -262,7 +266,7 @@ Before continuing, **call a TA for review**.
 [search-mock]:https://assets.aaonline.io/fullstack/html-css/projects/aa_times/solution/docs/screenshots/search_modal.jpg
 [css-tricks-containers]: https://css-tricks.com/full-width-containers-limited-width-parents/
 
-## Bonus: A Fixed Header
+## Bonus: A fixed header
 
 Use what you have learned to create a Fixed Header. When scrolling past the
 `sections_nav` a `fixed_sections_nav` should appear. Use the [NYTimes][nyt] as
@@ -270,7 +274,7 @@ an example.
 
 [nyt]: http://nytimes.com
 
-## Additional Reading
+## Additional reading
 
 Additional reading related to today's project:
 
